@@ -1,6 +1,7 @@
 {
   "name": "kreme201/file-base-router",
   "description": "File based router for PHP",
+  "license": "BSD-3-Clause",
   "version": "0.1.1",
   "keywords": [
     "routing",
