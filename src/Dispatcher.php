@@ -4,7 +4,6 @@ namespace FileBaseRouter;
 
 final class Dispatcher
 {
-
     public function __construct(
         private readonly string $base_path,
     ) {
