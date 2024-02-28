@@ -1,7 +1,7 @@
 {
   "name": "kreme201/file-base-router",
   "description": "File based router for PHP",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "keywords": [
     "routing",
     "router"
