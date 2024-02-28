@@ -79,7 +79,7 @@ final class Dispatcher
                         $uri_vars[$matches[1]] = $request_uri_part;
                         $found_folder_item = true;
                         break;
-                    } elseif (preg_match('/^\[(.*?)\]$/', $folder_item, $matches)) {
+                    } elseif (preg_match('/^\[(.*?)]$/', $folder_item, $matches)) {
                         $template_path .= DIRECTORY_SEPARATOR . $folder_item;
                         $uri_vars[$matches[1]] = $request_uri_part;
                         $found_folder_item = true;
