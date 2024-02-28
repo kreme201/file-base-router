@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-use FileBaseRouter\Dispatcher;
+use Kreme\FileBaseRouter\Dispatcher;
 
 require_once dirname(__DIR__, 2) . '/vendor/autoload.php';
 

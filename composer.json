@@ -2,7 +2,7 @@
   "name": "kreme/file-base-router",
   "autoload": {
     "psr-4": {
-      "FileBaseRouter\\": "src/"
+      "Kreme\\FileBaseRouter\\": "src/"
     }
   },
   "authors": [
