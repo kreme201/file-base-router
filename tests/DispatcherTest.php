@@ -25,40 +25,40 @@ class DispatcherTest extends TestCase
     private string $base_path;
     private Dispatcher $dispatcher;
 
-    public function testDispatchIndexPage()
+    public function test_Dispatch_Index()
     {
         $this->assertEquals($this->dispatcher->dispatch('/'), $this->base_path . '/index.php');
     }
 
-    public function testDispatchBoardList()
+    public function test_Dispatch_Board_List()
     {
         $this->assertEquals($this->dispatcher->dispatch('/board'), $this->base_path . '/board/index.php');
     }
 
-    public function testDispatchBoardDetail()
+    public function test_Dispatch_Board_Detail()
     {
         $this->assertEquals($this->dispatcher->dispatch('/board/123'), $this->base_path . '/board/[id]/index.php');
         $this->assertEquals(123, $_GET['id'] ?? '');
     }
 
-    public function testDispatchBoardDetailEdit()
+    public function test_Dispatch_Board_Detail_Edit()
     {
         $this->assertEquals($this->dispatcher->dispatch('/board/456/edit'), $this->base_path . '/board/[id]/edit.php');
         $this->assertEquals(456, $_GET['id'] ?? '');
     }
 
-    public function testDispatchPostList()
+    public function test_Dispatch_Post_List()
     {
         $this->assertEquals($this->dispatcher->dispatch('/post'), $this->base_path . '/post/index.php');
     }
 
-    public function testDispatchPostSlug()
+    public function test_Dispatch_Post_Slug()
     {
         $this->assertEquals($this->dispatcher->dispatch('/post/test/slug'), $this->base_path . '/post/[...slug].php');
         $this->assertEquals('test/slug', $_GET['slug'] ?? '');
     }
 
-    public function testDispatch404()
+    public function test_Dispatch_404()
     {
         $this->assertFalse($this->dispatcher->dispatch('/404'));
         $this->assertFalse($this->dispatcher->dispatch('/board/123/test'));
