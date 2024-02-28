@@ -9,3 +9,4 @@
 
 # PHPUnit Cache
 .phpunit.result.cache
+.phpunit.cache/
