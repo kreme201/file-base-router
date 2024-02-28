@@ -15,4 +15,5 @@ if (false !== $template && file_exists($template)) {
     include $template;
 } else {
     http_response_code(404);
+    include COMPONENT_PATH . '/404.php';
 }
