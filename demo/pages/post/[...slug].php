@@ -1,4 +1,4 @@
-<h2>Board List Page</h2>
+<h2>Post Detail Page :: <?= $_GET['slug'] ?? '' ?></h2>
 
 <ul>
     <li><a href="/">Home</a></li>
