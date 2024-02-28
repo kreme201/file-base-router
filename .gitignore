@@ -1,2 +1,11 @@
+# Composer
 /vendor/
-/.idea
+
+# IntelliJ
+.idea/
+
+# VSCode
+.vscode/
+
+# PHPUnit Cache
+.phpunit.result.cache
