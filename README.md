@@ -14,11 +14,9 @@ PHP 8.3 에서 작성 및 테스트 되었습니다.
 
 ```
 RewriteEngine On
-RewriteBase /
-RewriteRule ^index\.php$ - [L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . /index.php [L]
+RewriteRule ^(.*)$ /index.php [L]
 ```
 
 ## Usage
