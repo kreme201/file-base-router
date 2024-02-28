@@ -1,6 +1,6 @@
 # File Based Router for PHP
 
-The File Based Router library is designed to handle dynamic routing based on files.
+File Based Router 라이브러리는 파일 기반으로 동적 라우팅을 처리하기 위해 작성되었습니다.
 
 ## Install
 
@@ -8,7 +8,7 @@ The File Based Router library is designed to handle dynamic routing based on fil
 composer require kreme201/file-base-router
 ```
 
-It has been developed and tested on PHP 8.3.
+PHP 8.3 에서 작성 및 테스트 되었습니다.
 
 ### Apache Setting
 
@@ -51,9 +51,9 @@ if (false !== $template && file_exists($template)) {
 }
 ```
 
-When creating an instance of the ```Dispatcher```, routing is handled based on the provided path.  
-Dynamic paths can be processed using ```[{name}]``` and ```[...{name}]``` to capture dynamic data.  
-Each data can be accessed via ```$_GET```, and data defined with ```[...{name}]``` includes all sub-paths.
+```Dispatcher``` 인스턴스 생성시 전달된 경로를 기반으로 라우팅이 처리되며,  
+동적 경로는 ```[{name}]```, ```[...{name}]``` 으로 동적 데이터를 처리할 수 있습니다.  
+각 데이터는 ```$_GET``` 으로 조회 가능하며, ```[...{name}]``` 으로 정의된 데이터는 모든 하위 경로를 포함합니다.
 
 ```
 /: {base_path}/index.php
