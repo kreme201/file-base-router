@@ -1,0 +1,17 @@
+{
+  "name": "kreme/file-base-router",
+  "autoload": {
+    "psr-4": {
+      "FileBaseRouter\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "kreme201",
+      "email": "kreme201@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=8.3"
+  }
+}
