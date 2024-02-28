@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace Kreme\FileBaseRouter;
+namespace Kreme201\FileBaseRouter;
 
 final class Dispatcher
 {

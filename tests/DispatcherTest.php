@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-use Kreme\FileBaseRouter\Dispatcher;
+use Kreme201\FileBaseRouter\Dispatcher;
 use org\bovigo\vfs\vfsStream;
 use PHPUnit\Framework\TestCase;
 
