@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-use Kreme\FileBaseRouter\Dispatcher;
+use Kreme201\FileBaseRouter\Dispatcher;
 
 define('APP_PATH', dirname(__DIR__));
 define('COMPONENT_PATH', APP_PATH . '/components');
