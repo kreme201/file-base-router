@@ -55,7 +55,7 @@ class DispatcherTest extends TestCase
     public function test_dispatch_post_slug()
     {
         $this->assertEquals($this->dispatcher->dispatch('/post/test/slug'), $this->base_path . '/post/[...slug].php');
-        $this->assertEquals('test/slug', $_GET['slug']);
+        $this->assertEquals('test/slug', $_GET['slug'] ?? '');
     }
 
     public function test_dispatch_404()
